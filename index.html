@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17121f">
+  <meta name="description" content="Quick K-pop quizzes, bias battles and tiny challenges. Pick a game and prove your stan energy.">
+  <title>FUNKPOP — K-pop games</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="FunkPop home">
+      <span class="brand-mark">✳</span>
+      <span>FUNK<span>POP</span></span>
+      <span class="brand-dot">.</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#games">Games</a>
+      <a href="#how-to-play">How to play</a>
+    </nav>
+    <button class="button button-small button-outline" id="header-play" type="button">LET'S PLAY <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR DAILY DOSE OF K-POP CHAOS</div>
+        <h1>HOW MUCH<br>OF A <span class="headline-pop">STAN</span><br>ARE YOU<span class="headline-period">?</span></h1>
+        <p class="hero-description">Fast quizzes. Impossible choices. Bias battles. Bring your bestie and prove your K-pop knowledge.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#games">PICK A GAME <span aria-hidden="true">↘</span></a>
+          <div class="players-note"><span class="mini-avatars" aria-hidden="true"><i>♡</i><i>✦</i><i>★</i></span><span>Made for fans, by fans.</span></div>
+        </div>
+        <div class="hero-tags" aria-label="Game features">
+          <span>#BIASCHECK</span><span>#KPOPQUIZ</span><span>#JUSTFORFUN</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Colorful K-pop game collage">
+        <div class="art-spark spark-a">✦</div>
+        <div class="art-spark spark-b">✳</div>
+        <div class="art-sticker sticker-top">NO. 01<br><strong>FAN MODE</strong></div>
+        <div class="art-card card-back">
+          <span class="card-label">YOUR BIAS?</span>
+          <span class="card-big">YOU<br>DECIDE.</span>
+          <span class="card-heart">♥</span>
+        </div>
+        <div class="art-card card-front">
+          <div class="fake-photo"><span class="photo-star">✦</span><span class="photo-face face-one">●</span><span class="photo-face face-two">●</span><span class="photo-face face-three">●</span><span class="photo-sparkle">✧</span></div>
+          <div class="photo-caption"><span>ULTIMATE</span><strong>BIAS BATTLE</strong><span class="caption-arrow">↗</span></div>
+        </div>
+        <div class="art-sticker sticker-bottom"><span>100%</span><br>STAN ENERGY</div>
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+      </div>
+      <div class="hero-bottom-note"><span>SCROLL TO PLAY</span><span class="scroll-line"></span></div>
+    </section>
+
+    <section class="games-section section-wrap" id="games">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">CHOOSE YOUR CHAOS</p>
+          <h2>PICK YOUR <span>PLAY.</span></h2>
+        </div>
+        <p class="section-description">Four ways to test your brain<br>and expose your bias.</p>
+      </div>
+
+      <div class="games-grid">
+        <article class="game-card game-pink">
+          <div class="game-card-top"><span class="game-number">01 / QUIZ</span><span class="game-symbol">?</span></div>
+          <div class="game-illustration quiz-illustration" aria-hidden="true"><span class="bubble bubble-one">K</span><span class="bubble bubble-two">POP!</span><span class="quiz-star">✦</span><span class="quiz-check">✓</span></div>
+          <div class="game-card-copy"><div class="game-type">KNOW YOUR K-POP</div><h3>QUIZ<br>RUSH</h3><p>Quick questions. No time to second-guess yourself.</p></div>
+          <button class="game-launch" type="button" data-game="quiz">PLAY THIS GAME <span aria-hidden="true">↗</span></button>
+        </article>
+
+        <article class="game-card game-yellow">
+          <div class="game-card-top"><span class="game-number">02 / CHOOSE</span><span class="game-symbol">♥</span></div>
+          <div class="game-illustration bias-illustration" aria-hidden="true"><div class="versus-card versus-left">B<br><small>BIAS</small></div><span class="versus">VS</span><div class="versus-card versus-right">♡<br><small>BIAS</small></div><span class="bias-spark">✦</span></div>
+          <div class="game-card-copy"><div class="game-type">THE IMPOSSIBLE CHOICE</div><h3>BIAS<br>BATTLE</h3><p>Two faves enter. Your loyalty is on the line.</p></div>
+          <button class="game-launch" type="button" data-game="bias">PLAY THIS GAME <span aria-hidden="true">↗</span></button>
+        </article>
+
+        <article class="game-card game-blue">
+          <div class="game-card-top"><span class="game-number">03 / SPOT IT</span><span class="game-symbol">⌕</span></div>
+          <div class="game-illustration intruder-illustration" aria-hidden="true"><span class="intruder-tile">★</span><span class="intruder-tile">♥</span><span class="intruder-tile intruder-odd">?</span><span class="intruder-tile">✦</span><span class="intruder-glass">⌕</span></div>
+          <div class="game-card-copy"><div class="game-type">ONE OF THESE IS NOT LIKE</div><h3>FIND THE<br>INTRUDER</h3><p>Three belong. One doesn't. Catch the odd one out.</p></div>
+          <button class="game-launch" type="button" data-game="intruder">PLAY THIS GAME <span aria-hidden="true">↗</span></button>
+        </article>
+
+        <article class="game-card game-green">
+          <div class="game-card-top"><span class="game-number">04 / DECODE</span><span class="game-symbol">☺</span></div>
+          <div class="game-illustration emoji-illustration" aria-hidden="true"><span>🖤</span><span>💗</span><span class="emoji-equals">=</span><span class="emoji-question">?</span><i class="emoji-twinkle">✧</i></div>
+          <div class="game-card-copy"><div class="game-type">EMOJI BRAIN POWER</div><h3>EMOJI<br>DECODER</h3><p>Decode the clue. Name the group. Easy, right?</p></div>
+          <button class="game-launch" type="button" data-game="emoji">PLAY THIS GAME <span aria-hidden="true">↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-section section-wrap" id="how-to-play">
+      <div class="how-badge" aria-hidden="true">✳</div>
+      <div class="how-copy"><p class="section-kicker">NO DOWNLOAD. NO DRAMA.</p><h2>JUST YOU,<br>YOUR BIAS <span>&</span><br>A LITTLE CHAOS.</h2></div>
+      <div class="how-steps">
+        <div class="how-step"><span class="step-number">01</span><div><h3>Pick your game</h3><p>Choose the challenge that matches your fan energy.</p></div><span class="step-icon">↗</span></div>
+        <div class="how-step"><span class="step-number">02</span><div><h3>Trust your gut</h3><p>Tap your answer. No overthinking allowed.</p></div><span class="step-icon">✦</span></div>
+        <div class="how-step"><span class="step-number">03</span><div><h3>Share the chaos</h3><p>Compare scores with your friends and run it back.</p></div><span class="step-icon">♥</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">✳</span><span>FUNK<span>POP</span></span><span class="brand-dot">.</span></a>
+    <p>UNOFFICIAL FAN-MADE PROJECT · MADE FOR FUN</p>
+    <a href="#games" class="back-top">BACK TO THE TOP ↑</a>
+  </footer>
+
+  <div class="game-modal" id="game-modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-topline"><span class="modal-brand"><span class="brand-mark">✳</span> FUNKPOP ARCADE</span><button class="modal-close" type="button" aria-label="Close game" data-close-modal>×</button></div>
+      <div id="game-content"></div>
+    </section>
+  </div>
+</body>
+</html>
