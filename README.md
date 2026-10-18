@@ -9,6 +9,7 @@ A small, mobile-friendly K-pop fan-game prototype built with plain HTML, CSS and
 - **Find the Intruder** — spot the group that doesn't fit the category.
 - **Emoji Decoder** — solve K-pop group clues from emoji wordplay.
 - Responsive layout, accessible dialog labels, keyboard Escape-to-close, score feedback, replay buttons, and reduced-motion support.
+- A GitHub Actions workflow with JavaScript syntax validation and GitHub Pages deployment.
 
 ## Run locally
 
@@ -17,16 +18,16 @@ Open \`index.html\` in a browser. The game runs entirely on the client.
 ## Publish with GitHub Pages
 
 1. Open the repository **Settings → Pages**.
-2. Under **Build and deployment**, select **GitHub Actions**.
-3. Push to \`main\`. The included workflow publishes the site automatically.
-4. After the first successful run, the Pages URL appears in **Settings → Pages**.
+2. Under **Build and deployment**, set the source to **GitHub Actions**.
+3. Open **Actions → Deploy static site to GitHub Pages** and choose **Run workflow** if the latest run did not start again automatically after Pages was enabled.
+4. Wait for the deployment job to complete successfully. The live URL appears in **Settings → Pages** and in the deployment job.
 
 ## Project structure
 
 - \`index.html\` — landing page and game dialog.
 - \`style.css\` — layout, card illustrations, responsive styling, and modal UI.
 - \`app.js\` — sample questions and mini-game logic.
-- \`.github/workflows/pages.yml\` — GitHub Pages deployment workflow.
+- \`.github/workflows/pages.yml\` — validation and deployment workflow.
 
 ## Next steps
 
